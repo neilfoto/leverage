@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>即時評估 — 槓桿｜粉嶺官立中學 DAT</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/quiz.css">
+</head>
+<body>
+
+<!-- 導覽列 -->
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="brand">
+      <span class="dot"></span>
+      <span>槓桿溫習<small>粉嶺官立中學 · 設計與應用科技科</small></span>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">三類槓桿</a>
+      <a href="quiz.html" class="active">即時評估</a>
+    </div>
+  </div>
+</nav>
+
+<header class="quiz-hero">
+  <h1>即時評估</h1>
+  <p>由淺到深，共 7 題。完成後成績會即時上傳給老師。</p>
+</header>
+
+<!-- 進度列 -->
+<div class="progress-wrap hidden" id="progressWrap">
+  <div class="progress-track"><div class="progress-bar" id="progressBar"></div></div>
+  <div class="progress-meta">
+    <span id="progressLabel">第 1 題 / 共 7 題</span>
+    <span id="timerLabel">用時 00:00</span>
+  </div>
+</div>
+
+<!-- 步驟一：學生資料 -->
+<section class="panel" id="infoPanel">
+  <h2>開始前，請填寫個人資料</h2>
+  <p class="note">資料會連同你的成績一併記錄，請務必填寫正確。</p>
+
+  <div class="grid2">
+    <div class="field" id="f-class">
+      <label for="in-class">班別 <span style="color:#d1495b">*</span></label>
+      <input type="text" id="in-class" placeholder="例如：3A" maxlength="6" autocomplete="off">
+      <div class="err">請輸入班別。</div>
+    </div>
+    <div class="field" id="f-id">
+      <label for="in-id">學號 <span style="color:#d1495b">*</span></label>
+      <input type="text" id="in-id" placeholder="例如：05" maxlength="4" inputmode="numeric" autocomplete="off">
+      <div class="err">請輸入學號。</div>
+    </div>
+  </div>
+  <div class="field" id="f-name">
+    <label for="in-name">姓名 <span style="color:#d1495b">*</span></label>
+    <input type="text" id="in-name" placeholder="例如：陳大文" maxlength="20" autocomplete="off">
+    <div class="err">請輸入姓名。</div>
+  </div>
+
+  <div class="q-nav" style="justify-content:flex-end;">
+    <button class="btn btn-primary" id="startBtn">開始評估 →</button>
+  </div>
+</section>
+
+<!-- 步驟二：題目 -->
+<section class="panel hidden" id="quizPanel"></section>
+
+<!-- 步驟三：結果 -->
+<section class="panel hidden" id="resultPanel"></section>
+
+<footer class="footer">
+  <div class="brand" style="display:inline-flex;">
+    <span class="dot"></span>
+    <span>粉嶺官立中學 · 設計與應用科技科（DAT）</span>
+  </div>
+  <p>槓桿溫習網頁 · 即時評估</p>
+</footer>
+
+<script src="js/quiz.js"></script>
+</body>
+</html>

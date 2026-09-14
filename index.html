@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>槓桿 — 三類槓桿｜粉嶺官立中學 DAT</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- 導覽列 -->
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="brand">
+      <span class="dot"></span>
+      <span>槓桿溫習<small>粉嶺官立中學 · 設計與應用科技科</small></span>
+    </div>
+    <div class="nav-links">
+      <a href="index.html" class="active">三類槓桿</a>
+      <a href="quiz.html">即時評估</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<header class="hero">
+  <span class="kicker">設計與應用科技科 · DAT</span>
+  <h1>認識槓桿的三大類別</h1>
+  <p class="lead">槓桿是最基本的簡單機械。把滑鼠移到下方的實例圖片上，看看施力、力點、支點、負荷和重點分別在哪裡。</p>
+  <div class="cta">
+    <a href="#classes" class="btn btn-primary">開始探索 ↓</a>
+    <a href="quiz.html" class="btn btn-ghost">前往即時評估</a>
+  </div>
+
+  <!-- 五個名詞圖例 -->
+  <div class="legend">
+    <span class="chip"><span class="swatch" style="background:var(--c-effort)"></span>施力</span>
+    <span class="chip"><span class="swatch" style="background:var(--c-epoint)"></span>力點</span>
+    <span class="chip"><span class="swatch" style="background:var(--c-fulcrum)"></span>支點</span>
+    <span class="chip"><span class="swatch" style="background:var(--c-load)"></span>負荷</span>
+    <span class="chip"><span class="swatch" style="background:var(--c-lpoint)"></span>重點</span>
+  </div>
+</header>
+
+<main class="wrap section" id="classes">
+  <h2 class="reveal">三大類槓桿</h2>
+  <p class="sub reveal">每一類槓桿的力點、支點和重點排列方式都不同，因而有不同的功用。將滑鼠停在圖片上即可顯示標註。</p>
+
+  <!-- 第一類 -->
+  <section class="lever-card reveal">
+    <div class="lever-head">
+      <span class="lever-badge">一</span>
+      <h3>第一類槓桿</h3>
+      <span class="tag">支點在中間</span>
+    </div>
+    <p class="lever-desc">
+      <b>重點和力點在兩邊</b>，支點位於中央。功用是<b>改變施力的大小和方向</b>（不一定省力）。
+      實例：<b>剪刀</b>。
+    </p>
+    <div class="lever-body">
+      <div class="interactive" data-lever="1">
+        <img src="images/lever1-scissors.png" alt="剪刀 — 第一類槓桿">
+        <span class="hint">將滑鼠移到圖片上顯示標註</span>
+        <!-- 標註：位置以百分比對應圖片 -->
+        <div class="marker top" style="left:16%; top:31%;">
+          <span class="lbl" style="background:var(--c-epoint)">力點</span>
+          <span class="pin" style="background:var(--c-epoint)"></span>
+        </div>
+        <!-- 施力：作用在「力點」，向下按壓（箭咀） -->
+        <div class="marker force down" style="left:16%; top:37%;">
+          <span class="fa" style="color:var(--c-effort)"><svg viewBox="0 0 22 54"><line x1="11" y1="2" x2="11" y2="40" stroke="currentColor" stroke-width="5" stroke-linecap="round"/><path d="M3 34 L11 51 L19 34" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span class="lbl" style="background:var(--c-effort)">施力</span>
+        </div>
+        <div class="marker top" style="left:52%; top:50%;">
+          <span class="lbl" style="background:var(--c-fulcrum)">支點</span>
+          <span class="pin" style="background:var(--c-fulcrum)"></span>
+        </div>
+        <div class="marker top" style="left:80%; top:36%;">
+          <span class="lbl" style="background:var(--c-lpoint)">重點</span>
+          <span class="pin" style="background:var(--c-lpoint)"></span>
+        </div>
+        <!-- 負荷：作用在「重點」，向下（箭咀） -->
+        <div class="marker force down" style="left:80%; top:42%;">
+          <span class="fa" style="color:var(--c-load)"><svg viewBox="0 0 22 54"><line x1="11" y1="2" x2="11" y2="40" stroke="currentColor" stroke-width="5" stroke-linecap="round"/><path d="M3 34 L11 51 L19 34" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span class="lbl" style="background:var(--c-load)">負荷</span>
+        </div>
+      </div>
+      <ul class="terms">
+        <li><span class="k" style="background:var(--c-fulcrum)">支點</span><span class="v">中央的螺絲，剪刀繞著它轉動。</span></li>
+        <li><span class="k" style="background:var(--c-epoint)">力點</span><span class="v">手握的把手，是施力作用的位置。</span></li>
+        <li><span class="k" style="background:var(--c-effort)">施力</span><span class="v">手指按壓把手所施加的力（力，有方向）。</span></li>
+        <li><span class="k" style="background:var(--c-lpoint)">重點</span><span class="v">刀刃剪切物件的位置，是負荷作用的位置。</span></li>
+        <li><span class="k" style="background:var(--c-load)">負荷</span><span class="v">被剪物件對刀刃的抗力（力，有方向）。</span></li>
+      </ul>
+    </div>
+    <div class="schematic">
+      <div class="cap">槓桿原理簡圖（第一類：支點在中間）</div>
+      <svg viewBox="0 0 480 210" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="第一類槓桿簡圖">
+        <!-- 槓桿橫桿 -->
+        <line x1="46" y1="120" x2="434" y2="120" stroke="#33313a" stroke-width="4" stroke-linecap="round"/>
+        <!-- 支點（三角形，中間） -->
+        <polygon points="240,120 224,162 256,162" fill="none" stroke="#33313a" stroke-width="4" stroke-linejoin="round"/>
+        <line x1="206" y1="162" x2="274" y2="162" stroke="#33313a" stroke-width="4" stroke-linecap="round"/>
+        <circle cx="240" cy="120" r="5" fill="#33313a"/>
+        <text x="240" y="192" text-anchor="middle" font-size="16">支點</text>
+        <!-- 力點（左端） + 施力箭咀（向下） -->
+        <circle cx="86" cy="120" r="5" fill="#33313a"/>
+        <text x="86" y="140" text-anchor="middle" font-size="16">力點</text>
+        <line x1="86" y1="40" x2="86" y2="104" stroke="#33313a" stroke-width="4" stroke-linecap="round"/>
+        <path d="M74 92 L86 110 L98 92" fill="none" stroke="#33313a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="86" y="30" text-anchor="middle" font-size="16">施力</text>
+        <!-- 重點（右端） + 負荷箭咀（向下） -->
+        <circle cx="394" cy="120" r="5" fill="#33313a"/>
+        <text x="394" y="140" text-anchor="middle" font-size="16">重點</text>
+        <line x1="394" y1="40" x2="394" y2="104" stroke="#33313a" stroke-width="4" stroke-linecap="round"/>
+        <path d="M382 92 L394 110 L406 92" fill="none" stroke="#33313a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="394" y="30" text-anchor="middle" font-size="16">負荷</text>
+      </svg>
+    </div>
+  </section>
+
+  <!-- 第二類 -->
+  <section class="lever-card reveal">
+    <div class="lever-head">
+      <span class="lever-badge">二</span>
+      <h3>第二類槓桿</h3>
+      <span class="tag">力點在外</span>
+    </div>
+    <p class="lever-desc">
+      <b>重點和力點在同一邊，力點在外</b>。功用是<b>省力</b>。
+      實例：<b>裁紙刀</b>。
+    </p>
+    <div class="lever-body">
+      <div class="interactive" data-lever="2">
+        <img src="images/lever2-cutter.png" alt="裁紙刀 — 第二類槓桿">
+        <span class="hint">將滑鼠移到圖片上顯示標註</span>
+        <div class="marker top" style="left:13%; top:60%;">
+          <span class="lbl" style="background:var(--c-fulcrum)">支點</span>
+          <span class="pin" style="background:var(--c-fulcrum)"></span>
+        </div>
+        <div class="marker top" style="left:87%; top:15%;">
+          <span class="lbl" style="background:var(--c-epoint)">力點</span>
+          <span class="pin" style="background:var(--c-epoint)"></span>
+        </div>
+        <!-- 施力：作用在「力點」，向下按壓（箭咀） -->
+        <div class="marker force down" style="left:87%; top:21%;">
+          <span class="fa" style="color:var(--c-effort)"><svg viewBox="0 0 22 54"><line x1="11" y1="2" x2="11" y2="40" stroke="currentColor" stroke-width="5" stroke-linecap="round"/><path d="M3 34 L11 51 L19 34" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span class="lbl" style="background:var(--c-effort)">施力</span>
+        </div>
+        <div class="marker top" style="left:48%; top:52%;">
+          <span class="lbl" style="background:var(--c-lpoint)">重點</span>
+          <span class="pin" style="background:var(--c-lpoint)"></span>
+        </div>
+        <!-- 負荷：作用在「重點」，紙張向上的抗力（箭咀） -->
+        <div class="marker force up" style="left:48%; top:70%;">
+          <span class="lbl" style="background:var(--c-load)">負荷</span>
+          <span class="fa" style="color:var(--c-load)"><svg viewBox="0 0 22 54"><line x1="11" y1="2" x2="11" y2="40" stroke="currentColor" stroke-width="5" stroke-linecap="round"/><path d="M3 34 L11 51 L19 34" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </div>
+      </div>
+      <ul class="terms">
+        <li><span class="k" style="background:var(--c-fulcrum)">支點</span><span class="v">左端的鉸鏈，刀臂繞著它轉動。</span></li>
+        <li><span class="k" style="background:var(--c-epoint)">力點</span><span class="v">最右端的手柄，離支點最遠。</span></li>
+        <li><span class="k" style="background:var(--c-effort)">施力</span><span class="v">手向下壓手柄所施加的力。</span></li>
+        <li><span class="k" style="background:var(--c-lpoint)">重點</span><span class="v">刀刃壓向紙張的位置，介乎支點與力點之間。</span></li>
+        <li><span class="k" style="background:var(--c-load)">負荷</span><span class="v">紙張被切斷時的抗力。</span></li>
+      </ul>
+    </div>
+    <div class="schematic">
+      <div class="cap">槓桿原理簡圖（第二類：力點在外、重點在中間）</div>
+      <svg viewBox="0 0 480 210" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="第二類槓桿簡圖">
+        <line x1="46" y1="120" x2="434" y2="120" stroke="#33313a" stroke-width="4" stroke-linecap="round"/>
+        <!-- 支點（左端） -->
+        <polygon points="86,120 70,162 102,162" fill="none" stroke="#33313a" stroke-width="4" stroke-linejoin="round"/>
+        <line x1="52" y1="162" x2="120" y2="162" stroke="#33313a" stroke-width="4" stroke-linecap="round"/>
+        <circle cx="86" cy="120" r="5" fill="#33313a"/>
+        <text x="86" y="192" text-anchor="middle" font-size="16">支點</text>
+        <!-- 重點（中間） + 負荷箭咀（向上，抗力） -->
+        <circle cx="240" cy="120" r="5" fill="#33313a"/>
+        <text x="240" y="140" text-anchor="middle" font-size="16">重點</text>
+        <line x1="240" y1="120" x2="240" y2="56" stroke="#33313a" stroke-width="4" stroke-linecap="round"/>
+        <path d="M228 68 L240 50 L252 68" fill="none" stroke="#33313a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="240" y="38" text-anchor="middle" font-size="16">負荷</text>
+        <!-- 力點（右端） + 施力箭咀（向下） -->
+        <circle cx="394" cy="120" r="5" fill="#33313a"/>
+        <text x="394" y="140" text-anchor="middle" font-size="16">力點</text>
+        <line x1="394" y1="40" x2="394" y2="104" stroke="#33313a" stroke-width="4" stroke-linecap="round"/>
+        <path d="M382 92 L394 110 L406 92" fill="none" stroke="#33313a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="394" y="30" text-anchor="middle" font-size="16">施力</text>
+      </svg>
+    </div>
+  </section>
+
+  <!-- 第三類 -->
+  <section class="lever-card reveal">
+    <div class="lever-head">
+      <span class="lever-badge">三</span>
+      <h3>第三類槓桿</h3>
+      <span class="tag">重點在外</span>
+    </div>
+    <p class="lever-desc">
+      <b>重點和力點在同一邊，重點在外</b>。功用是<b>費力，但省時（移動距離較小）</b>。
+      實例：<b>鑷子</b>。
+    </p>
+    <div class="lever-body">
+      <div class="interactive" data-lever="3">
+        <img src="images/lever3-tweezers.png" alt="鑷子 — 第三類槓桿">
+        <span class="hint">將滑鼠移到圖片上顯示標註</span>
+        <div class="marker top" style="left:8%; top:46%;">
+          <span class="lbl" style="background:var(--c-fulcrum)">支點</span>
+          <span class="pin" style="background:var(--c-fulcrum)"></span>
+        </div>
+        <div class="marker top" style="left:46%; top:42%;">
+          <span class="lbl" style="background:var(--c-epoint)">力點</span>
+          <span class="pin" style="background:var(--c-epoint)"></span>
+        </div>
+        <!-- 施力：作用在「力點」，向下按壓（箭咀） -->
+        <div class="marker force down" style="left:46%; top:48%;">
+          <span class="fa" style="color:var(--c-effort)"><svg viewBox="0 0 22 54"><line x1="11" y1="2" x2="11" y2="40" stroke="currentColor" stroke-width="5" stroke-linecap="round"/><path d="M3 34 L11 51 L19 34" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span class="lbl" style="background:var(--c-effort)">施力</span>
+        </div>
+        <div class="marker top" style="left:89%; top:50%;">
+          <span class="lbl" style="background:var(--c-lpoint)">重點</span>
+          <span class="pin" style="background:var(--c-lpoint)"></span>
+        </div>
+        <!-- 負荷：作用在「重點」，被夾物件向上的抗力（箭咀） -->
+        <div class="marker force up" style="left:89%; top:66%;">
+          <span class="lbl" style="background:var(--c-load)">負荷</span>
+          <span class="fa" style="color:var(--c-load)"><svg viewBox="0 0 22 54"><line x1="11" y1="2" x2="11" y2="40" stroke="currentColor" stroke-width="5" stroke-linecap="round"/><path d="M3 34 L11 51 L19 34" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </div>
+      </div>
+      <ul class="terms">
+        <li><span class="k" style="background:var(--c-fulcrum)">支點</span><span class="v">左端兩臂接合處。</span></li>
+        <li><span class="k" style="background:var(--c-epoint)">力點</span><span class="v">手指按壓的中間位置，介乎支點與重點之間。</span></li>
+        <li><span class="k" style="background:var(--c-effort)">施力</span><span class="v">手指夾壓所施加的力。</span></li>
+        <li><span class="k" style="background:var(--c-lpoint)">重點</span><span class="v">右端夾住物件的尖端，離支點最遠。</span></li>
+        <li><span class="k" style="background:var(--c-load)">負荷</span><span class="v">被夾物件對夾嘴的抗力。</span></li>
+      </ul>
+    </div>
+    <div class="schematic">
+      <div class="cap">槓桿原理簡圖（第三類：重點在外、力點在中間）</div>
+      <svg viewBox="0 0 480 210" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="第三類槓桿簡圖">
+        <line x1="46" y1="120" x2="434" y2="120" stroke="#33313a" stroke-width="4" stroke-linecap="round"/>
+        <!-- 支點（左端） -->
+        <polygon points="86,120 70,162 102,162" fill="none" stroke="#33313a" stroke-width="4" stroke-linejoin="round"/>
+        <line x1="52" y1="162" x2="120" y2="162" stroke="#33313a" stroke-width="4" stroke-linecap="round"/>
+        <circle cx="86" cy="120" r="5" fill="#33313a"/>
+        <text x="86" y="192" text-anchor="middle" font-size="16">支點</text>
+        <!-- 力點（中間） + 施力箭咀（向下） -->
+        <circle cx="240" cy="120" r="5" fill="#33313a"/>
+        <text x="240" y="140" text-anchor="middle" font-size="16">力點</text>
+        <line x1="240" y1="40" x2="240" y2="104" stroke="#33313a" stroke-width="4" stroke-linecap="round"/>
+        <path d="M228 92 L240 110 L252 92" fill="none" stroke="#33313a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="240" y="30" text-anchor="middle" font-size="16">施力</text>
+        <!-- 重點（右端） + 負荷箭咀（向上，抗力） -->
+        <circle cx="394" cy="120" r="5" fill="#33313a"/>
+        <text x="394" y="140" text-anchor="middle" font-size="16">重點</text>
+        <line x1="394" y1="120" x2="394" y2="56" stroke="#33313a" stroke-width="4" stroke-linecap="round"/>
+        <path d="M382 68 L394 50 L406 68" fill="none" stroke="#33313a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="394" y="38" text-anchor="middle" font-size="16">負荷</text>
+      </svg>
+    </div>
+  </section>
+
+  <div style="text-align:center; margin-top:14px;" class="reveal">
+    <a href="quiz.html" class="btn btn-primary">準備好了？前往即時評估 →</a>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="brand" style="display:inline-flex;">
+    <span class="dot"></span>
+    <span>粉嶺官立中學 · 設計與應用科技科（DAT）</span>
+  </div>
+  <p>槓桿溫習網頁 · 主題：槓桿</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
